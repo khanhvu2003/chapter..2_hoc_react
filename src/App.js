@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { increaseCounter, decreaseCounter } from './redux/action/counterAction';
 import MyComponent from './component/MyComponent'
@@ -37,12 +37,8 @@ class App extends react.Component {
   }
   render() {
     return (
-      <div>
-        khánh vũ
+      <div className='App-container'>
         <MyComponent> </MyComponent>
-        Họ và tên : {this.state.name} \n
-        tuổi : {this.state.age}
-
       </div>
     );
   }
